@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f3e6d5" />
+  <title>Boyfriend Application | A Little About Me</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="star-field" aria-hidden="true" id="starField"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home">♡ <span>the boyfriend portfolio</span></a>
+    <a class="nav-link" href="#application">The application ↓</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="eyebrow"><span class="tiny-heart">♥</span> NOW ACCEPTING ONE SPECIAL PERSON</div>
+      <h1>Why you should<br><em>hire me</em> as your boyfriend.</h1>
+      <p class="hero-copy">A little portfolio of my best qualities, my promises, and the kind of love I’d like to give you.</p>
+      <a class="primary-button" href="#application">Review my application <span>♡</span></a>
+      <div class="hero-note">Position: your favorite person · Availability: whenever you need me*</div>
+      <div class="hero-decoration heart-one">♡</div>
+      <div class="hero-decoration sparkle-one">✦</div>
+      <div class="hero-decoration sparkle-two">✧</div>
+    </section>
+
+    <section class="intro section-wrap" id="application">
+      <div class="section-kicker">01 / THE CANDIDATE</div>
+      <div class="intro-grid">
+        <div>
+          <h2>Hi, beautiful.<br><em>Here’s my case.</em></h2>
+        </div>
+        <div class="intro-text">
+          <p>I’m not applying to be perfect. I’m applying to be someone who listens, shows up, makes you laugh, and chooses you with intention.</p>
+          <p class="small-note">Hayst, anything for you mi doee.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="photos section-wrap">
+      <div class="section-kicker">02 / PHOTO EVIDENCE</div>
+      <div class="section-heading">
+        <h2>A few snapshots <em>of me.</em></h2>
+        <p>Tap any frame to add your own photo.</p>
+      </div>
+      <div class="photo-grid">
+        <label class="photo-card photo-tall">
+          <input type="file" accept="image/*" class="photo-input" aria-label="Upload first photo" />
+          <img class="uploaded-photo" alt="Your first photo" />
+           <span class="photo-placeholder"><span class="photo-icon">＋</span><strong>Photo No. 01</strong><small>A favorite memory</small></span>
+          <span class="photo-caption">The first impression ✦</span>
+        </label>
+        <label class="photo-card">
+          <input type="file" accept="image/*" class="photo-input" aria-label="Upload second photo" />
+          <img class="uploaded-photo" alt="Your second photo" />
+          <span class="photo-placeholder"><span class="photo-icon">＋</span><strong>Photo No. 02</strong><small>A favorite memory</small></span>
+          <span class="photo-caption">Soft-launch material</span>
+        </label>
+        <label class="photo-card">
+          <input type="file" accept="image/*" class="photo-input" aria-label="Upload third photo" />
+          <img class="uploaded-photo" alt="Your third photo" />
+          <span class="photo-placeholder"><span class="photo-icon">＋</span><strong>Photo No. 03</strong><small>Show them your vibe</small></span>
+          <span class="photo-caption">Potential favorite person</span>
+        </label>
+      </div>
+      <p class="photo-tip">Note ang picture kay mo refresh if I refresh sd ang site.</p>
+    </section>
+
+    <section class="qualities section-wrap">
+      <div class="section-kicker">03 / QUALIFICATIONS</div>
+      <h2>What I bring <em>to the relationship.</em></h2>
+      <div class="quality-grid">
+        <article class="quality-card"><span class="quality-number">01</span><div class="quality-icon">☕</div><h3>Quality time</h3><p>Little dates, long talks, random adventures, and being present when we’re together.</p></article>
+        <article class="quality-card"><span class="quality-number">02</span><div class="quality-icon">♡</div><h3>Consistent effort</h3><p>Not just sweet words. Thoughtful actions, honest communication, and keeping my promises.</p></article>
+        <article class="quality-card"><span class="quality-number">03</span><div class="quality-icon">☾</div><h3>Emotional support</h3><p>A safe space to talk, a person who listens, and someone who celebrates your wins.</p></article>
+        <article class="quality-card"><span class="quality-number">04</span><div class="quality-icon">✿</div><h3>Playful energy</h3><p>Bad jokes, shared playlists, cute messages, and reasons to smile on ordinary days.</p></article>
+      </div>
+    </section>
+
+    <section class="promise-section">
+      <div class="promise-inner">
+        <div class="section-kicker">04 / MY PROMISE</div>
+        <div class="quote-mark">“</div>
+        <h2>I can’t promise to be perfect.<br><em>I can promise to keep trying.</em></h2>
+        <p>I’ll respect you as your own person, communicate honestly, celebrate who you are, and work through hard moments with care. No games just genuine effort, because I really want to be ur bf.</p>
+        <div class="signature">— your potential favorite person ♡</div>
+      </div>
+    </section>
+
+    <section class="closing section-wrap">
+      <div class="section-kicker">05 / FINAL ROUND</div>
+      <h2>So… should we<br><em>give this a chance?</em></h2>
+      <p>Applications are reviewed with butterflies, good conversations, and mutual consent.</p>
+      <button class="primary-button" id="yesButton" type="button">I’m ready for the interview ♡</button>
+      <p class="response-message" id="responseMessage" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <span>Made with care, love, and lots of thinking of you</span>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
